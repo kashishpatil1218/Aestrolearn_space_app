@@ -2,6 +2,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../home/home_page.dart';
+
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
 
@@ -62,9 +64,9 @@ class IntroScreen extends StatelessWidget {
                 child: Center(
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context).pushReplacement(
-                      //   MaterialPageRoute(builder: (context) => const PlanetSlider()),
-                      // );
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => const HomePage()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
