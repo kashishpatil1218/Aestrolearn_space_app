@@ -18,15 +18,17 @@ class SolarModel {
     required this.type,
   });
 
-  factory SolarModel.fromMap(Map m1) => SolarModel(
-    name: m1['name'],
-    description: m1['description'],
-    diameter_km: m1['diameter_km'],
-    distance_from_sun_km: m1['distance_from_sun_km'],
-    gif: m1['gif'],
-    gravity_m_s2: m1['gravity_m_s2'],
-    mass_kg: m1['mass_kg'],
-    orbital_period_days: m1['orbital_period_days'],
-    type: m1['type'],
-  );
+  factory SolarModel.fromMap(Map m1) =>
+      SolarModel(
+        name: m1['name'],
+        description: m1['description'],
+        diameter_km: m1['diameter_km'],
+        distance_from_sun_km: m1['distance_from_sun_km'],
+        gif: m1['gif'],
+        gravity_m_s2: m1['gravity_m_s2'],
+        mass_kg: m1['mass_kg'],
+        orbital_period_days: m1['orbital_period_days'],
+        type: m1['type'],
+      );
+
 }
